@@ -1,12 +1,12 @@
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import { CircleCheckBig } from "lucide-react";
+import { Blocks, CircleCheckBig, CircleGauge, ClipboardClock, Sparkles, UserLock } from "lucide-react";
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
+  const List = ({ text, icon }) => (
     <p className="text-body-color mb-5 flex items-center text-lg font-medium">
       <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
-        <CircleCheckBig className="h-5 w-5" />
+        {icon || <CircleCheckBig className="h-5 w-5" />}
       </span>
       {text}
     </p>
@@ -43,15 +43,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Member-first access" />
-                    <List text="Approval workflows" />
-                    <List text="Smart integrations" />
+                    <List text="Member-first access" icon={<UserLock className="h-5 w-5" />} />
+                    <List text="Approval workflows" icon={<CircleCheckBig className="h-5 w-5" />} />
+                    <List text="Smart integrations" icon={<Blocks className="h-5 w-5" />} />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Unified dashboard" />
-                    <List text="Attendance tracking" />
-                    <List text="AI assistance" />
+                    <List text="Unified dashboard" icon={<CircleGauge className="h-5 w-5" />} />
+                    <List text="Attendance tracking" icon={<ClipboardClock className="h-5 w-5" />} />
+                    <List text="AI assistance" icon={<Sparkles className="h-5 w-5" />} />
                   </div>
                 </div>
               </div>
