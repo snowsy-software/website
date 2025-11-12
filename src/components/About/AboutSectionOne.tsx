@@ -16,11 +16,24 @@ const AboutSectionOne = () => {
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
+
+          {/*
+          <p className="text-center mb-8 text-lg font-semibold text-primary md:mb-12">
+            Current Project
+          </p>
+          */}
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
+              <Image
+                src="/images/logo/eventies.svg"
+                alt="Eventies EMS Logo"
+                width={250}
+                height={75}
+                className="mb-6"
+              />
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Eventies EMS"
+                paragraph="Eventies EMS is a member-first event management system designed for educational organizations. It streamlines internal, member-only events with robust RBAC, approval workflows, seamless integrations (Canva, Google), and AI assistance. Eventies enhances, not replaces, existing tools—offering privacy, compliance, and data sovereignty through flexible SaaS or self-hosted deployment options."
                 mb="44px"
               />
 
@@ -30,15 +43,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Member-first access" />
+                    <List text="Approval workflows" />
+                    <List text="Smart integrations" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Unified dashboard" />
+                    <List text="Attendance tracking" />
+                    <List text="AI assistance" />
                   </div>
                 </div>
               </div>
