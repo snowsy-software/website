@@ -7,6 +7,7 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
+  /*
   {
     id: 2,
     title: "About",
@@ -80,5 +81,6 @@ const menuData: Menu[] = [
       },
     ],
   },
+  */
 ];
 export default menuData;
