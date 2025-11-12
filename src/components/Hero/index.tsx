@@ -17,29 +17,30 @@ const Hero = () => {
                   &nbsp;for a better tomorrow.
                 </h1>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  Snowsy is a Sydney-based software startup dedicated to crafting innovative and impactful digital solutions
+                  that drive progress and make a positive difference in the world. It focuses on delivering high-quality software
+                  for the underserved market and communities.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="https://nextjstemplates.com/templates/saas-starter-startup"
+                    href="#"
                     className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    🔥 Get Pro
+                    Projects
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    href="https://github.com/snowsy-software"
                     className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Star on GitHub
+                    GitHub
                   </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/*
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
@@ -281,6 +282,7 @@ const Hero = () => {
             </defs>
           </svg>
         </div>
+          */}
       </section>
     </>
   );
