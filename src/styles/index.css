@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
-layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap') layer(base);
 
 @import 'tailwindcss';
 
@@ -19,7 +18,18 @@ layer(base);
   --color-white: #ffffff;
   --color-black: #121723;
   --color-dark: #1d2430;
-  --color-primary: #4a6cf7;
+  --color-primary: #509aa0;
+  --color-primary-50: #f2f8f9;
+  --color-primary-100: #d6e6e8;
+  --color-primary-200: #b9d3d7;
+  --color-primary-300: #9cc1c5;
+  --color-primary-400: #7faeb4;
+  --color-primary-500: #509aa0;
+  --color-primary-600: #468a90;
+  --color-primary-700: #3c7a80;
+  --color-primary-800: #326a70;
+  --color-primary-900: #285a60;
+  --color-primary-950: #1e4a50;
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
 
@@ -73,6 +83,7 @@ layer(base);
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -111,13 +122,13 @@ layer(base);
 }
 
 @utility dot {
-  input#togglePlan:checked ~ & {
+  input#togglePlan:checked~& {
     @apply translate-x-full;
   }
 }
 
 @utility box {
-  input#checkboxLabel:checked ~ & span {
+  input#checkboxLabel:checked~& span {
     @apply opacity-100;
   }
 }
@@ -129,7 +140,7 @@ layer(base);
 }
 
 @layer components {
-  input[type="checkbox"]:checked ~ label span svg {
+  input[type="checkbox"]:checked~label span svg {
     @apply inline-flex;
   }
 }
