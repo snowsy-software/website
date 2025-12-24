@@ -1,0 +1,23 @@
+# dependencies
+/node_modules/
+bun.lock
+bun.lockb
+
+# tanstack start / vite
+/.output/
+/.tanstack/
+/.vite/
+
+# misc
+.DS_Store
+
+# env files
+.env
+.env.local
+.env.*.local
+
+# typescript
+*.tsbuildinfo
+
+# claude code
+.claude/
